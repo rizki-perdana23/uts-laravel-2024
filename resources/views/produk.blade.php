@@ -36,6 +36,27 @@
   </nav>
   <div class="container">
     <h1>Halaman Produk</h1>
+    <table class="table table-primary table-sm table-hover">
+      <thead>
+        <tr>
+          <th>Kode Produk</th>
+          <th>Nama Produk</th>
+          <th>Jenis Produk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BRG001</td>
+          <td>Pena</td>
+          <td>Alat Tulis</td>
+        </tr>
+        <tr>
+          <td>BRG002</td>
+          <td>Buku</td>
+          <td>Alat Tulis</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </body>
