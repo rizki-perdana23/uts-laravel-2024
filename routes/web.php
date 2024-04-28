@@ -15,11 +15,8 @@ Route::get('profile', function () {
 });
 
 Route::get('produk', function () {
-    return view('produk');
-});
-
-Route::get('array', function () {
-    for ($i = 1; $i <= 5; $i++) {
-        echo 'hello world' . $i  . 'x<br';
-    }
+    $kode = ['BRG001', 'BRG002', 'BRG003', 'BRG004', 'BRG005'];
+    $nama = ['Pena', 'Buku Tulis', 'Penggaris', 'Pensil', 'Penghapus'];
+    $jumlah = count($kode);
+    return view('produk', compact('kode', 'jumlah', 'nama'));
 });

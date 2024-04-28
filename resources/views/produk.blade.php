@@ -45,21 +45,18 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>BRG001</td>
-          <td>Pena</td>
-          <td>Alat Tulis</td>
-        </tr>
-        <tr>
-          <td>BRG002</td>
-          <td>Buku</td>
-          <td>Alat Tulis</td>
-        </tr>
-      </tbody>
+        
+        @for ($i=0; $i < $jumlah; $i++) 
+            <tr>
+                <td>{{ $kode[$i] }}</td>
+                <td>{{ $nama[$i] }}</td>
+                <td>Alat Tulis</td>
+            </tr>
+        @endfor
+    </tbody>
     </table>
   </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </html>
