@@ -36,27 +36,48 @@
   </nav>
   <div class="container">
     <h1>Halaman Produk</h1>
-    <table class="table table-primary table-sm table-hover">
-      <thead>
-        <tr>
-          <th>Kode Produk</th>
-          <th>Nama Produk</th>
-          <th>Jenis Produk</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-        @for ($i=0; $i < $jumlah; $i++) 
-            <tr>
-                <td>{{ $kode[$i] }}</td>
-                <td>{{ $nama[$i] }}</td>
-                <td>Alat Tulis</td>
-            </tr>
-        @endfor
-    </tbody>
-    </table>
-  </div>
-
+    <div class="row"></div>
+    <div class="col-sm-6">
+      <table class="table table-primary table-sm table-hover">
+        <thead>
+          <tr>
+            <th>Kode Produk</th>
+            <th>Nama Produk</th>
+            <th>Jenis Produk</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          @for ($i=0; $i < $jumlah; $i++) 
+              <tr>
+                  <td>{{ $kode[$i] }}</td>
+                  <td>{{ $nama[$i] }}</td>
+                  <td>Alat Tulis</td>
+              </tr>
+          @endfor
+      </tbody>
+      </table>
+      <div class="col-sm-6">
+       <h4>Form Tambah Produk</h4>
+       <form action="" method="GET">
+        <label for="">Kode Produk</label>
+        <input type="number" name="" id="" class="form-control">
+        <label for="">Nama Produk</label>
+        <input type="text" name="" id="" class="form-control">
+        <label for="">Harga Produk</label>
+        <input type="number" name="" id="" class="form-control">
+        <label for="">Jenis Produk</label>
+        <select name="" id="" class="form-control"></select>
+        <option value="">Alat Tulis</option>
+        <option value="">Elektronik</option>
+        <option value="">Sembako</option>
+        </select>
+        </form> 
+      </div>
+      <div class="form-group mt-2">
+        <button class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
